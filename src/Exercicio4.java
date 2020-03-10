@@ -33,7 +33,7 @@ public class Exercicio4 {
 
 		for (int i = 0; i < vetVal.length; i++)
 		{
-			System.out.println("Vetor[" + i + "] = " +SomaVetor(vetor,i,0));
+			System.out.println("Vetor[" + i + "] = "  +SomaVetor(vetor,i,0));
 		}
 	}
 	public static int ImprimirVetor(int[] vet, int [] vetValores, int n) 

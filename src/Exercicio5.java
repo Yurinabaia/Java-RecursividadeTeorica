@@ -3,26 +3,27 @@ public class Exercicio5 {
 
 	public static void main(String[] args) 
 	{
-		// TODO Auto-generated method stub
-		System.out.print("Valores " + CosenoRadiano(5));
+		// TODO Auto-generated method stub, 
+		System.out.print("Valores " + CosenoRadiano(0, 0, 5,0));
 	}
-	public static double CosenoRadiano(int n) 
+	public static double CosenoRadiano(int n, int cont,int fim, double resul) 
 	{
-		if(n ==0) 
+		double fat = fatorial(n);
+		if(n > fim) 
 		{
-			return n;
+			return resul;
 		}
 		else 
 		{
-			int fat = fatorial(n);
-			System.out.print(fat);
-			if(n%2 == 0) 
+			if(cont%2 == 0) 
 			{
-				return 1/fat - CosenoRadiano(n -1);
+				resul = resul + 1/fat;
+				return CosenoRadiano(n + 2, cont +1, fim, resul);
 			}
 			else 
 			{
-				return 1/fat + CosenoRadiano(n - 1);
+				resul = resul - 1/fat;
+				return CosenoRadiano(n + 2, cont +1, fim, resul);
 			}
 		}
 	}
