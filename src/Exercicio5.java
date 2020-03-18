@@ -4,7 +4,7 @@ public class Exercicio5 {
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub, 
-		System.out.print("Valores " + CosenoRadiano(0, 0, 5,0));
+		System.out.print("Valores " + CosenoRadiano(0, 0, 12,0));
 	}
 	public static double CosenoRadiano(int n, int cont,int fim, double resul) 
 	{

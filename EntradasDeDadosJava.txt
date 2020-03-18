@@ -1,0 +1,9 @@
+import java util.*;
+Scanner entrada2 = new Scanner(System.in);
+
+import java.io.*;
+throws IOExcption
+BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+
+int valor = Integer.parseInt(entrada2.next());
+int valor2 = Integer.parseInt(entrada.readLine());
